@@ -1,0 +1,239 @@
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.accent-color {
+  color: #5d92b5 ;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #40406b;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar .profile p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list > li {
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.nav-list > li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list > li a:hover {
+  color: #ffa07a;
+}
+
+.main-content {
+  display: flex;
+  padding: 50px;
+  background-color: #f4f4f9;
+}
+
+.main-left {
+  width: 50%;
+}
+
+.main-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.main-left h3 {
+  font-size: 30px;
+  color: #40406b;
+  margin-bottom: 20px;
+}
+
+.main-left p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.skills, .projects, .education, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills, .projects, .education {
+  background-image: linear-gradient(to right, #f8e9cd, #c5c5f7);
+}
+
+.contact {
+  background-color: #f4f4f9;
+  color: rgb(29, 28, 28);
+}
+
+.skills-heading, .project-heading, .education-heading, .contact-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #181823;
+}
+
+.skills-info, .skills-info, .education-info {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.skills-card-container, .projectcontainer, .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card, .projectcard, .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover, .projectcard:hover, .card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card img, .projectcard img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.projectcontainer {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 20px;
+  padding: 20px;
+}
+
+.projectcard {
+  flex: 0 0 auto; /* Ensures cards do not shrink and take up only the necessary space */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; /* Set a fixed width for each project card */
+  transition: transform 0.3s;
+}
+
+.projectcard img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #f4f4f9;
+}
+
+.projectcard h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.projectcard p {
+  font-size: 18px;
+  color: #656363;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.contact a:hover {
+  background-color: #aba29d;
+}
+
+footer {
+  background: #3f3f50;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: background 0.5s, transform 0.5s;
+  border: 1px solid #2f2737;
+}
+
+.footer .social-media a:hover {
+  background: #231b2c;
+}
+
+.footer .resume a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+footer .resume a:hover {
+  background: #231b2c;
+}
+.footer p {
+  font-size: 16px;
+  color: gray;
+}
